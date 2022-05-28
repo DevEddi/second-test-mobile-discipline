@@ -13,7 +13,7 @@ export default function RouteOne() {
   return (    
     <NavigationContainer>
         <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="Home" component={Home} options={{title: 'Bank Rick and Morty'}}/>
             <Stack.Screen name="HelpClient" component={HelpClient} />
             <Stack.Screen name="AccountOpening" component={AccountOpening} />
         </Stack.Navigator>
