@@ -14,8 +14,7 @@ export default function AccountOpening() {
 
   return (    
     <View>
-      <FormAccount
-      
+      <FormAccount      
       />
     </View>
   );
