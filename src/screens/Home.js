@@ -5,11 +5,14 @@ import {
   Button
 } from 'react-native';
 
+import HomeImage from '../components/homeImage/HomeImage';
+
 export default function Home({ navigation }) {
   return (
     <View>
-        
-      <Text>Home</Text>
+      <HomeImage      
+      
+      />
       <Button
         title="Account Opening"
         onPress={() => navigation.navigate('AccountOpening')}
