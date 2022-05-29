@@ -6,13 +6,13 @@ import {
   StyleSheet,
 } from 'react-native';
 
-
+import FormInfo from '../components/formInfo/FormInfo';
 
 export default function HelpClient() {
   return (
     <View>
       <View>
-        <Text>Rick will help you!!!</Text>
+        <Text>Vick will help you!!!</Text>
       </View>
       <View>
           <TextInput
