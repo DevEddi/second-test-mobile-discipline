@@ -7,24 +7,16 @@ import {
 } from 'react-native';
 
 import FormInfo from '../components/formInfo/FormInfo';
+import TextInfo from '../components/textInfo/TextInfo';
+import HelpClientStyle from '../styles/helpClientStyle/HelpClientStyle';
 
 export default function HelpClient() {
   return (
-    <View>
+    <View style={HelpClientStyle.containerHelp}>
       <View>
-        <Text>Vick will help you!!!</Text>
-      </View>
-      <View>
-          <TextInput
-            style={styles.input}
-            placeholder="Digite sua dúvida"          
-          />
-      </View>
-      <View>
-        <Text>Info Bank</Text>
-        <Text>Phone</Text>
-        <Text>Map</Text>
-      </View> 
+        <Text style={HelpClientStyle.titleHelp}>I'm <Text style={HelpClientStyle.titleVick}>Vick</Text>, how can I help you?</Text>         
+      </View>           
+      <FormInfo/>
     </View>
   );
 }

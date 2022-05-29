@@ -1,37 +1,21 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  container: {
-    padding:10,
-  },
-  inputText: {
-    borderColor: "#f4511e",
-    width: "100%",
+  textInfo: {
+    marginTop:10,
+    marginBottom: 10,
+    paddingTop: 5,
+    paddingBottom:5,
+    paddingLeft: 10,
+    fontSize: 18,
+    backgroundColor:'#f4511e',
     borderWidth: 1,
-    borderRadius: 10,
-    padding: 10,
-    
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,    
   },
-  titleInputs:{
-    margin:4, 
-    fontWeight: 'bold'
-  },
-  picker:{
-    backgroundColor:'#f4511e',
-    color: '#fff',
-  },
-  pickerItem:{
-    backgroundColor:'#f4511e',
-    color: '#fff',
-  },
-  slider:{
-    width: '100%',
-    height: 40,
-    
-  },
-  switch:{
-    padding:10,
-  }
+
 });
 
 
