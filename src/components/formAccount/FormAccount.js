@@ -66,8 +66,7 @@ export default function FormAccount() {
   }
 
   return (    
-    <View style={styles.container}>
-      <Text>Open Account</Text>      
+    <View style={styles.container}>    
           <View>
             <Text style={styles.titleInputs}>Name:</Text>
             <TextInput
@@ -94,29 +93,35 @@ export default function FormAccount() {
               selectedValue={selectedGender}
               onValueChange={(itemValue, itemIndex) => setSelectedGender(itemValue)              
             }>
-              <Picker.Item label="Man" value="Man" />
-              <Picker.Item label="Woman" value="Woman" />
+              <Picker.Item
+                style={styles.pickerItem}
+                label="Man"
+                value="Man" />
+              <Picker.Item 
+                style={styles.pickerItem}
+                label="Woman"
+                value="Woman" />
             </Picker>
           </View>
 
-          <View style={styles.titleInputs}>
-              <Text>Your Limit: {limitAccount}</Text>
+          <View >
+              <Text style={styles.titleInputs}>Your Limit: R$ {limitAccount}</Text>
               <Slider
                 style={styles.slider}
                 minimumValue={0.00}
                 maximumValue={1000.00}
                 onValueChange={setLimitAccount}
-                minimumTrackTintColor="#F1A4"
+                minimumTrackTintColor="#f4511e"
                 maximumTrackTintColor="#000000"
               />
           </View>
 
-          <View style={styles.titleInputs}>
-            <Text>Estudante:</Text>
+          <View>
+            <Text style={styles.titleInputs}>Estudante:</Text>
             <Switch
               style={styles.switch}
-              trackColor={{ false: "#767577", true: "#81b0ff" }}
-              thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+              trackColor={{ false: "#767577", true: "#9CB4CC" }}
+              thumbColor={isEnabled ? "#f4511e" : "#f4f3f4"}
               ios_backgroundColor="#3e3e3e"
               onValueChange={toggleSwitch}
               value={isEnabled}

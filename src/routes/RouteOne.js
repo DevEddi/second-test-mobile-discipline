@@ -34,10 +34,34 @@ export default function RouteOne() {
             <Stack.Screen
               name="HelpClient"
               component={HelpClient}
+              options={
+                {title: 'Help Client',
+                headerStyle: {
+                  backgroundColor: '#f4511e',
+                },
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: 'bold',
+                  fontSize: 24,                  
+                },
+              }
+              }
             />
             <Stack.Screen
               name="AccountOpening"
               component={AccountOpening}
+              options={
+                {title: 'Account Opening',
+                headerStyle: {
+                  backgroundColor: '#f4511e',
+                },
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: 'bold',
+                  fontSize: 24,                  
+                },
+              }
+              }
             />
         </Stack.Navigator>
     </NavigationContainer>
