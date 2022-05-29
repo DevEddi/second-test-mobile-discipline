@@ -8,8 +8,6 @@ import Home from '../screens/Home';
 import HelpClient from '../screens/HelpClient';
 import AccountOpening from '../screens/AccountOpening';
 
-import styles from './style';
-
 const Stack = createNativeStackNavigator();
 
 export default function RouteOne() {
@@ -20,14 +18,14 @@ export default function RouteOne() {
               name="Home"
               component={Home}
               options={
-                {title: 'Bank Viki',
+                {title: 'Viki Bank',
                 headerStyle: {
                   backgroundColor: '#f4511e',
                 },
                 headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: 'bold',
-                  fontSize: 32,                  
+                  headerTitleStyle: {
+                    fontWeight: 'bold',
+                    fontSize: 32,                  
                 },
               }
               }/>
@@ -40,9 +38,9 @@ export default function RouteOne() {
                   backgroundColor: '#f4511e',
                 },
                 headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: 'bold',
-                  fontSize: 24,                  
+                  headerTitleStyle: {
+                    fontWeight: 'bold',
+                    fontSize: 24,                  
                 },
               }
               }
@@ -52,13 +50,13 @@ export default function RouteOne() {
               component={AccountOpening}
               options={
                 {title: 'Account Opening',
-                headerStyle: {
-                  backgroundColor: '#f4511e',
+                  headerStyle: {
+                    backgroundColor: '#f4511e',
                 },
                 headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: 'bold',
-                  fontSize: 24,                  
+                  headerTitleStyle: {
+                    fontWeight: 'bold',
+                    fontSize: 24,                  
                 },
               }
               }

@@ -7,10 +7,7 @@ import {
   Text,
   View,
   TextInput,
-  Button,
   Alert,
-  StyleSheet,
-  TouchableOpacity,
   Switch,
 } from 'react-native';
 
@@ -28,21 +25,21 @@ export default function FormAccount() {
 
   const showAlert = (name, age, selectedGender, limitAccount, enable) =>
   Alert.alert(
-    "Criar conta",
+    "Confirm your data",
         'Nome: ' + name + '\n' +
         'Age: ' + age + '\n' + 
         'Gender: ' + selectedGender + '\n' +
-        'Limit: ' + limitAccount + '\n' +
+        'Limit: ' + parseFloat(limitAccount).toFixed(2) + '\n' +
         'Student: ' + enable,
     [
       {
-        text: "Open Account",
+        text: "Confirm",
         onPress: () => Alert.alert("Thanks Open Account"),
         style: "cancel",
       },
       {
         text: "Cancel",
-        onPress: () => Alert.alert("Cancel Open Account"),
+        onPress: () =>  resetOpenAccount(),
         style: "cancel",
       },
     ]    
@@ -52,7 +49,7 @@ export default function FormAccount() {
       if (name != null && age != null &&  selectedGender != null && limitAccount != 0){
             showAlert(name, age, selectedGender, limitAccount, isEnabled)
       }else{
-          Alert.alert('Você deve preencher todos os campos ausentes')
+          Alert.alert('You must fill in all missing fields')
       }
 
   }
@@ -105,7 +102,7 @@ export default function FormAccount() {
           </View>
 
           <View >
-              <Text style={styles.titleInputs}>Your Limit: R$ {limitAccount}</Text>
+              <Text style={styles.titleInputs}>Your Limit: R$ {parseFloat(limitAccount).toFixed(2)}</Text>
               <Slider
                 style={styles.slider}
                 minimumValue={0.00}
