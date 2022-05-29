@@ -5,14 +5,9 @@ export default StyleSheet.create({
     padding: 10,
     alignItems:'center',
     justifyContent:'center',
-    backgroundColor: '#43a1c9',
   },
   logoBank: {
-    width: 300,
-    height: 300,
-  },
-  titleBank:{
-    fontSize: 42,
-    
+    width: 400,
+    height: 400,
   },
 });

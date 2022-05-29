@@ -1,26 +1,29 @@
 import React from 'react';
 import { 
-  Text,
   View,
-  Button
 } from 'react-native';
 
 import HomeImage from '../components/homeImage/HomeImage';
+import ButtonTheme from '../components/buttonTheme/ButtonTheme';
+import HomeStyle from '../styles/homeStyle/HomeStyle'
+
 
 export default function Home({ navigation }) {
   return (
-    <View>
-      <HomeImage      
+    <View style={HomeStyle.containerHome}>
+      <HomeImage     
       
       />
-      <Button
-        title="Account Opening"
-        onPress={() => navigation.navigate('AccountOpening')}
-      />
-      <Button
-        title="Help Client"
-        onPress={() => navigation.navigate('HelpClient')}
-      />
+      <View>
+        <ButtonTheme
+          screenDirection={() => navigation.navigate('AccountOpening')}
+          nameButton="Account Opening"      
+        />
+        <ButtonTheme
+          screenDirection={() => navigation.navigate('HelpClient')}
+          nameButton="Help Client"              
+        />
+      </View>
     </View>
   );
 }
