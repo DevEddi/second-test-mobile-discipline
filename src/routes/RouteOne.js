@@ -2,17 +2,16 @@ import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet } from 'react-native';
 
 import Home from '../screens/Home';
-import HelpClient from '../screens/HelpClient';
 import AccountOpening from '../screens/AccountOpening';
+import HelpClient from '../screens/HelpClient';
 
 const Stack = createNativeStackNavigator();
 
 export default function RouteOne() {
   return (    
-    <NavigationContainer>
+    <NavigationContainer>        
         <Stack.Navigator initialRouteName="Home">
             <Stack.Screen 
               name="Home"
@@ -62,7 +61,7 @@ export default function RouteOne() {
               }
             />
         </Stack.Navigator>
-    </NavigationContainer>
+    </NavigationContainer>   
 
   );
 }

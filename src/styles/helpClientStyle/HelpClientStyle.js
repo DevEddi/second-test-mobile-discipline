@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   containerHelp: {
     margin:20,
+    justifyContent: 'space-between',
   },
   titleHelp:{
     fontSize:32,
