@@ -10,13 +10,13 @@ import styles from './style'
 
 export default function ButtonTheme(props) { 
   
-  const [largura, setLargura] = useState(new Animated.Value(100))
+  const [largura, setLargura] = useState(new Animated.Value(0))
 
   Animated.timing(
     largura,
     {
-      toValue: 410,
-      duration:4000,
+      toValue: 1,
+      duration:3000,
       useNativeDriver: false,
     }
   ).start();
@@ -24,7 +24,7 @@ export default function ButtonTheme(props) {
   return (
     <Animated.View
     style={{
-      width: largura
+      opacity: largura
     }}>
       <TouchableOpacity 
         style={styles.buttonTouch}       
