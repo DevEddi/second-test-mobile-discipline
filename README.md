@@ -1,67 +1,67 @@
-# Avaliação 2
+# Rating 2
 
-#### Disciplina: Introdução ao Desenvolvimento Mobile 
-#### Professor(a): Érica C. R. Carvalho
-#### Data de entrega: 30/05/22 às 23h
-#### Valor: 3 pontos
+- **Subject: Introduction to Mobile Development**
+- **Teacher: Érica C. R. Carvalho**
+- **Delivery date: 05/30/22 at 11pm**
+- **Value: 3 points**
 
-### Tema: Desafio Banco
+### Theme: Bank Challenge
 
->Você foi contratado para fazer parte de uma equipe de desenvolvimento de um banco
->muito famoso e deve ajudar essa equipe a criar um app para que os clientes possam
->abrir uma conta nesse banco.
+>You were hired to be part of a bank development team
+>very famous and should help this team create an app so customers can
+>open an account at that bank.
 
-No app deve ser utilizado pelo menos 2 tipos de navegação Stack, Tabs, Drawer) com pelo menos 3 telas e com os seguintes itens:
+At least 2 types of navigation must be used in the app (Stack, Tabs, Drawer) with at least 3 screens and with the following items:
 
 <br>
-1. Tela inicial, contendo (no mínimo):
+1. Home screen, containing (at a minimum):
 
-- O logo e nome do Banco.
-- Outras informações do banco devem ser adicionadas (use sua criatividade de desenvolvedor Front-end para personalizar a tela inicial).
-- Pelo menos 2 animações nessa tela.
+- The logo and name of the Bank.
+- Other bank information must be added (use your Front-end developer creativity to customize the home screen).
+- At least 2 animations on this screen.
 <br>
 
-2. Tela de ajuda/sobre, contendo (no mínimo):
+2. Help/about screen, containing (at a minimum):
 
-- Tela com informações que o banco deve fornecer caso o cliente queira entrar em contato com o banco de outras formas (telefone, link para site, etc).
-- Informações sobre o banco, podendo conter dados e/ou tabelas sobre ele.
-- Pelo menos 2 animações nessa tela.<br>
+- Screen with information that the bank must provide if the customer wants to contact the bank in other ways (telephone, link to website, etc.).
+- Information about the bank, which may contain data and/or tables about it.
+- At least 2 animations on this screen.<br>
 <br>
 
-3. Tela para abertura de uma conta, contendo (no mínimo):
+3. Screen for opening an account, containing (at least):
 
-- Nessa tela, devem ser informados os seguintes campos usando os
-componentes indicados:
-- Nome (TextInput)
-- Idade (TextInput)
-- Gênero (Picker do @react-native-picker/picker) [link](https://github.com/react-native-picker/picker).
-- Seu limite (Slider do @react-native-community/slider) [link](https://www.npmjs.com/package/@react-native-community/slider).
-- Estudante (Switch)
-- Abrir a conta (TouchableOpacity)
-- Resetar (TouchableOpacity)
-- Ao cliclar no botão 'Abrir a conta', todos os dados devem ser mostrados na
-tela em uma alerta (alert()). Caso algum dado esteja em branco, nenhum dado deve
-ser exibido e deve ser informado que todos os campos devem ser preenchidos.
-- Ao cliclar no botão 'Resetar', todos os campos devem voltar ao seu valor
-(estado) inicial.
-- Deve conter pelo menos 1 animação nessa tela.
-- Ver o vídeo no AVA que ilustra o comportamento desta tela.
+- On this screen, the following fields must be entered using the
+recommended components:
+- Name (TextInput)
+- Age (TextInput)
+- Genre (Picker from @react-native-picker/picker) [link](https://github.com/react-native-picker/picker).
+- Your limit (@react-native-community/slider) [link](https://www.npmjs.com/package/@react-native-community/slider).
+- Student (Switch)
+- Open account (TouchableOpacity)
+- Reset (TouchableOpacity)
+- When clicking on the 'Open account' button, all data must be shown in the
+screen in an alert (alert()). If any data is blank, no data should be
+be displayed and it must be informed that all fields must be filled in.
+- When clicking the 'Reset' button, all fields must return to their value
+initial (state).
+- Must contain at least 1 animation on this screen.
+- View the video in the AVA that illustrates the behavior of this screen.
 <br>
 
-#### Os seguintes elementos devem estar presentes no código
+#### The following elements must be present in the code
 
-- Devem ser criados componentes para cada tela/parte do código.
-- As cores e os tamanhos devem estar em um arquivo separado (ex.: colors.js e
+- Components must be created for each screen/part of the code.
+- Colors and sizes must be in a separate file (e.g. colors.js and
 sizes.js)
-- Os botões e os inputs de texto devem ser um componente sem estado (ex.:
-MyButton.js e MyTextInput.js)
-- Devem ser utilizados pelo menos 2 React Hooks (useState, useEffect ou
+- Buttons and text inputs must be a stateless component (e.g.:
+MyButton.js and MyTextInput.js)
+- At least 2 React Hooks must be used (useState, useEffect or
 useMemo)
 
-#### Observações:
+#### Comments:
 
-- A avaliação é individual.
-- Não é permitido copiar do colega. Se isso ocorrer, a nota será dividida pelo total de
-alunos envolvidos na cópia.
-- Usa sua criatividade para personalizar o app. Qualquer conteúdo adicional será
-validado.
+- The assessment is individual.
+- Copying from a colleague is not allowed. If this occurs, the grade will be divided by the total of
+students involved in copying.
+- Use your creativity to customize the app. Any additional content will be
+validated.
