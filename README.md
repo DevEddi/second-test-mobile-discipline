@@ -1,4 +1,4 @@
-# Rating 2
+# Discipline Mobile Assessment
 
 - **Subject: Introduction to Mobile Development**
 - **Teacher: Érica C. R. Carvalho**
